@@ -1,60 +1,41 @@
-# Welcome to \<Project-Name\>!  
-(maybe add some kind of fancy burning match banner?)
+# Welcome to Elektrosluch!  
+![image Kopie](https://github.com/user-attachments/assets/ef6bcb4f-d0e6-4c1c-a8d3-f1a2713637d2)
 
-very **short** description of: 
-- what it is 
-- in what context it was developed 
+The Elektrosluch, an open-source device enables you to listen to electromagnetic fields. It allows users to hear the normally inaudible frequencies of these fields by converting them into an audio signal.
+It was first developed by Jonas Gruska.
 
-```A simple DIY "drone" streaming either live camera or infrared feed. Part of the [TechTales exhibition at UNI_VERSUM.](https://linktothething.notarealwebsite.com)```
+## Hardware
 
-Try to stick to 1 or 2 sentences, no more than a paragraph.
-
-## Features (optional)
-
-## Hardware (optional)
-
-if your project only consists of an esp32 devboard, a potentiometer, and a raspberry pi, feel free to list them here -> immediately show what is needed / for what it is designed
-
+This device only needs the following hardware components_
 ```
-- Seeed Studio XIAO ESP32S3 Sense
-- super duper fancy Infrared-Sensor2000
-- 340mAh LiPo battery
-- 22in mylar ballon (or similar)
-- kite string
-- optional NeoPixels or similar
-```
-
-if it requires a bunch of components, put it in the documentation
-
-## Quick Start / Documentation (optional)
-
-if it's something super simple (a standalone arduino sketch), provide a quick description of how to get it running here. 
-if at all possible, add picture(s)! 
-(make sure to note any special version requirements, or such, if relevant)
-
-``` 
-Only works with Arduino IDE >= 2.13 !
-
-- Connect the camera module to the ESP32 as described here: [link]
-- Copy the src folder to your computer and open the sketch in Arduino IDE. 
-- Make sure to install somerandomlibrary
-- Set your own WiFi credentials
-- Compile and Upload 
-- Open browser and enjoy!
-
-If anything went wrong, check common errors and solutions in docs/troubleshooting.md, or use our [handy little prompt template](https://github.com/smitzkar/wald-troubleshooting-prompt/) to let your favourite llm guide you through the process.  
-
-If it's your first time using Arduino, we recommend you follow [this guide.](https://randomnerdtutorials.com/installing-esp32-arduino-ide-2-0/)
-
+- Perfboard at least 15×24 holes
+- 2 x Resistors, 1kΩ
+- 2 x Resistors , 100kΩ
+- 2 x Resistors, 390kΩ,
+- 4 x Capacitors, 2.2µF 10V (polypropylene, polymer or electrolytic)
+- 2 x Capacitors, 100µF 10V (low ESR electrolytic or polymer)
+- 2 x Inductor, 22mH, vertical type
+- 1 x IC socket, 8 pin DIL
+- 1 x Op-amp IC chip, OPA2134 (Other op-amps might work too — check the pinout!)
+- 1 x Stereo jack connector
+- 1 x 9V battery connector lead
+- 1 x 9V battery (rechargable if possible)
+- Hookup wire
+- optional: LED (not included in the schematic)
+- optional: switch button (not included in the schematic)
 ```
 
-if it's more complex, link to the relevant documentation. for example: 
-```
-Check out our [Quick Start Guide here!](docs/Build-Guide.md) 
-For a quick guide on how to get started with bela, see: [linktosomegoodplace](https://actuallinktogoodplace.notarealwebsite.com)
-```
+## Quick Start / Documentation
+The Make:Magazine has a great step-by-step instruction to build the Elektrosluch: https://makezine.com/projects/weekend-project-sample-weird-sounds-electromagnetic-fields/
 
-## Anything Else? 
+Here is the schematic (Without LED and switch)
+<img width="1552" height="1718" alt="elektrosluch diy schematic" src="https://github.com/user-attachments/assets/7592e09f-4800-4090-bb12-869c197d5259" />
+
+<img width="909" height="1086" alt="elektrosluch diy layout" src="https://github.com/user-attachments/assets/ee2e1574-9dc4-4c63-b92f-6e303bd47ff1" />
+
+You can add the switch in order to turn the device on and off easily. Solder it inbetween the battery and C5 (see first schematic). 
+
+## 
 
 ## Links 
 
