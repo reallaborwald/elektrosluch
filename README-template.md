@@ -35,7 +35,12 @@ Here is the schematic (Without LED and switch)
 
 You can add the switch in order to turn the device on and off easily. Solder it inbetween the battery and C5 (see first schematic). 
 
-## 
+## Some Background Information
+
+An operational amplifier requires a symmetrical supply voltage.
+However, our battery only outputs a voltage between 0V and 9V.
+The voltage divider allows us to create a ‘virtual ground’, in which we output 0V as -4.5V, 4.5V as 0V and 9V as 4.5V.
+This makes a symmetrical power supply possible.
 
 ## Links 
 
